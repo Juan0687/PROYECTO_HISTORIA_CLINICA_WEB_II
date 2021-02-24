@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="50c44b4f491a433989b73eb234c1cc07" Name="Diagram1">
+        <EntityTypeShape EntityType="HIST_CLINModel.DOCTOR" Width="1.5" PointX="0.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="HIST_CLINModel.ESPECIALIDAD" Width="1.5" PointX="0.75" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="HIST_CLINModel.historia" Width="1.5" PointX="3" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="HIST_CLINModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HIST_CLINModel.TIPO_SEGURO" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="HIST_CLINModel.FK__historia__id_doc__3D5E1FD2" ManuallyRouted="false" />
+        <AssociationConnector Association="HIST_CLINModel.FK__historia__id_esp__3E52440B" ManuallyRouted="false" />
+        <AssociationConnector Association="HIST_CLINModel.FK__historia__id_tip__3F466844" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
