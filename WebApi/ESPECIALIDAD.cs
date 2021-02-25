@@ -20,7 +20,7 @@ namespace WebApi
         }
     
         public int id_especialidad { get; set; }
-        public string especialidad { get; set; }
+        public string especialidad1 { get; set; }
     
         public virtual ICollection<historia> historia { get; set; }
     }

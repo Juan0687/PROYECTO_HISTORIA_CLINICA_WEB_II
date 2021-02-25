@@ -35,7 +35,7 @@ namespace WebApi.Controllers
         {
             using (HIST_CLINEntities bd = new HIST_CLINEntities())
             {
-                var objEspecialidad = bd.ESPECIALIDAD.Where(d => d.especialidad.Contains(dato)).ToList();
+                var objEspecialidad = bd.ESPECIALIDAD.Where(d => d.especialidad1.Contains(dato)).ToList();
                 return objEspecialidad;
             }
         }
@@ -46,7 +46,7 @@ namespace WebApi.Controllers
             using (HIST_CLINEntities bd = new HIST_CLINEntities())
             {
                 var objEspecialidad = new ESPECIALIDAD();
-                objEspecialidad.especialidad = "si";
+                objEspecialidad.especialidad1 = "si";
                 bd.ESPECIALIDAD.Add(objEspecialidad);
                 bd.SaveChanges();
             }
