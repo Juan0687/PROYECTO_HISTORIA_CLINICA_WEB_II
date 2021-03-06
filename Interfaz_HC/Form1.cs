@@ -22,7 +22,7 @@ namespace Interfaz_HC
             InitializeComponent();
         }
 
-        private void registrarbtn_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             lbRespuesta.Text = "";
             string url = "http://192.168.0.9:90/api/DOCTOR";
