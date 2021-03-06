@@ -1,11 +1,16 @@
-﻿using System;
+﻿using Interfaz_HC.Models.Request;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Script.Serialization;
 using System.Windows.Forms;
 
 namespace Interfaz_HC
@@ -17,16 +22,20 @@ namespace Interfaz_HC
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void registrarbtn_Click(object sender, EventArgs e)
         {
             lbRespuesta.Text = "";
-            string url = "http://192.168.0.9:800/api/producto";
-            ProductoRequest objProducto = new ProductoRequest();
-            objProducto.Nombre = txtNombre.Text;
-            objProducto.Precio = Int32.Parse(txtApellido.Text);
-            objProducto.Cantidad = Int32.Parse(txtFono.Text);
+            string url = "http://192.168.0.9:90/api/DOCTOR";
+            DOCTORRequest objDOCTOR = new DOCTORRequest();
+            tipoRequest objtipo = new tipoRequest();
+            EspecialidadRequest objEspecialidad = new EspecialidadRequest();
+            historiaRequest objhistoria = new historiaRequest();
 
-            string resultado = Send<ProductoRequest>(url, objProducto, "POST");
+            objDOCTOR.Nombre = txtNombre.Text;
+            objDOCTOR.Precio = Int32.Parse(txtApellido.Text);
+            objDOCTOR.Cantidad = Int32.Parse(txtFono.Text);
+
+            string resultado = Send<DOCTORRequest>(url, objDOCTOR, "POST");
             lbRespuesta.Text = resultado;
         }
 

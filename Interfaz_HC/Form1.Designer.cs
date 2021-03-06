@@ -30,6 +30,7 @@ namespace Interfaz_HC
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -52,12 +53,11 @@ namespace Interfaz_HC
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.registrarbtn = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -72,6 +72,16 @@ namespace Interfaz_HC
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(755, 115);
             this.panel1.TabIndex = 0;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("MV Boli", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(170, 28);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(410, 52);
+            this.label11.TabIndex = 1;
+            this.label11.Text = "HISTORIAL CLINICO";
             // 
             // textBox1
             // 
@@ -274,16 +284,16 @@ namespace Interfaz_HC
             this.label10.TabIndex = 22;
             this.label10.Text = "Peso";
             // 
-            // button1
+            // registrarbtn
             // 
-            this.button1.Font = new System.Drawing.Font("MV Boli", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(28, 43);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "REGISTRAR";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.registrarbtn.Font = new System.Drawing.Font("MV Boli", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.registrarbtn.Location = new System.Drawing.Point(28, 43);
+            this.registrarbtn.Name = "registrarbtn";
+            this.registrarbtn.Size = new System.Drawing.Size(90, 23);
+            this.registrarbtn.TabIndex = 0;
+            this.registrarbtn.Text = "REGISTRAR";
+            this.registrarbtn.UseVisualStyleBackColor = true;
+            this.registrarbtn.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -321,22 +331,12 @@ namespace Interfaz_HC
             this.panel2.Controls.Add(this.button4);
             this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.registrarbtn);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 115);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(140, 332);
             this.panel2.TabIndex = 1;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("MV Boli", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(170, 28);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(410, 52);
-            this.label11.TabIndex = 1;
-            this.label11.Text = "HISTORIAL CLINICO";
             // 
             // Form1
             // 
@@ -403,7 +403,7 @@ namespace Interfaz_HC
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button registrarbtn;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
