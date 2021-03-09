@@ -16,5 +16,6 @@ namespace Interfaz_HC.Models.Request
         public string motivo_consulta { get; set; }
         public string alergias { get; set; }
         public string fecha { get; set; }
+
     }
 }
